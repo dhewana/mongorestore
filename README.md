@@ -3,10 +3,10 @@ Restore a MongoDB database. This script **only works** if the backup ran using s
 
 ## Config example
 ```
-DB_HOST = ''
-DB_PORT = ''
-DB_NAME = ''
-BACKUP_PATH = '/home/user/dbname/date/dbname/'
+DB_HOST = '127.0.0.1'
+DB_PORT = '27017'
+DB_NAME = 'dbname'
+BACKUP_PATH = '/home/user/dbname/'
 ```
 Note : The `/` at the end of `BACKUP_PATH` is **important**.
 
