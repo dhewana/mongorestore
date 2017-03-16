@@ -16,7 +16,7 @@ DATE = time.strftime('%Y%m%d')
 TODAYBACKUPPATH = BACKUP_PATH + DATE + "*/" + DB_NAME + "/"
 
 print (time.strftime('%Y%m%d-%H%M%S') + " - Starting to restore database '" + DB_NAME + "' ...")
-restore_cmd = "mongorestore --host " + DB_HOST + " --port " + DB_PORT + " -d " + DB_NAME + TODAYBACKUPPATH + " --gzip"
+restore_cmd = "mongorestore --host " + DB_HOST + " --port " + DB_PORT + " -d " + DB_NAME + " " + TODAYBACKUPPATH + " --gzip"
 os.system(restore_cmd)
 print (time.strftime('%Y%m%d-%H%M%S') + " - Restore of database '" + DB_NAME + "' completed.\n")
 
